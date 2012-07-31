@@ -93,21 +93,32 @@ $(document).ready(function(){initNavTree('_plugin_properties_8h.html','');});
 
 <p>Information about this plugin used in areas like plugin registration and generating the About dialog.  
 <a href="#details">More...</a></p>
-
+<div class="textblock"><code>#include &quot;<a class="el" href="_utility_macros_8h_source.html">UtilityMacros.h</a>&quot;</code><br/>
+</div>
 <p><a href="_plugin_properties_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a0acf7475326cdcd31d690b72033de33a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0acf7475326cdcd31d690b72033de33a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGIN_NAME</b>&#160;&#160;&#160;&quot;MeshTex&quot;</td></tr>
+<tr class="memitem:a8d230fbed193712c76947c67a1659627"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d230fbed193712c76947c67a1659627"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGIN_VERSION_MAJOR_NUMERIC</b>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:a74d917cb4b06f6f4403d87ad9557b8ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74d917cb4b06f6f4403d87ad9557b8ca"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGIN_VERSION_MINOR_NUMERIC</b>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:afccad64028fb6c9ac2923be268a89efb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afccad64028fb6c9ac2923be268a89efb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGIN_VERSION</b>&#160;&#160;&#160;&quot;3.0&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGIN_VERSION</b>&#160;&#160;&#160;<a class="el" href="_utility_macros_8h.html#abd4a9198899041394149612677e86935">STRINGIFY_MACRO</a>(PLUGIN_VERSION_MAJOR_NUMERIC) &quot;.&quot; <a class="el" href="_utility_macros_8h.html#abd4a9198899041394149612677e86935">STRINGIFY_MACRO</a>(PLUGIN_VERSION_MINOR_NUMERIC)</td></tr>
 <tr class="memitem:a265068a76dad4b9410dc4f7fad66ebd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a265068a76dad4b9410dc4f7fad66ebd6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGIN_AUTHOR</b>&#160;&#160;&#160;&quot;Joel Baxter&quot;</td></tr>
 <tr class="memitem:afad57e8cc5c25caeb109c8cf4f6ab1b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afad57e8cc5c25caeb109c8cf4f6ab1b8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGIN_AUTHOR_EMAIL</b>&#160;&#160;&#160;&quot;joel.baxter@neogeographica.com&quot;</td></tr>
+<tr class="memitem:ac6f5bf49f8b3beb77d719ceb2c33964c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6f5bf49f8b3beb77d719ceb2c33964c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGIN_COPYRIGHT_DATE</b>&#160;&#160;&#160;&quot;2012&quot;</td></tr>
 <tr class="memitem:a02783773d3c73e1e9f63c1181d39e93a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02783773d3c73e1e9f63c1181d39e93a"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGIN_DESCRIPTION</b>&#160;&#160;&#160;&quot;Align and scale textures on patch meshes&quot;</td></tr>
+<tr class="memitem:ad4a05719a621e7c5393683e71fd66cc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4a05719a621e7c5393683e71fd66cc0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGIN_FILE_BASENAME</b>&#160;&#160;&#160;&quot;meshtex&quot;</td></tr>
+<tr class="memitem:aa043ca3bab73837a726afe9ff18e320c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa043ca3bab73837a726afe9ff18e320c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGIN_FILE_DESCRIPTION</b>&#160;&#160;&#160;&quot;patch mesh texturing plugin for GtkRadiant 1.5&quot;</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Information about this plugin used in areas like plugin registration and generating the About dialog. </p>
@@ -117,7 +128,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="_plugin_properties_8h.html">PluginProperties.h</a></li>
-    <li class="footer">Generated on Mon Jul 30 2012 17:22:17 for MeshTex by
+    <li class="footer">Generated on Tue Jul 31 2012 11:55:06 for MeshTex by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.1 </li>
   </ul>

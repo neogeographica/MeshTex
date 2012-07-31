@@ -65,5 +65,6 @@ var files =
       [ "SetScaleDialog", "class_set_scale_dialog.html", "class_set_scale_dialog" ],
       [ "SetScaleVisitor", "class_set_scale_dialog_1_1_set_scale_visitor.html", "class_set_scale_dialog_1_1_set_scale_visitor" ],
       [ "SliceArgs", "struct_set_scale_dialog_1_1_set_scale_visitor_1_1_slice_args.html", "struct_set_scale_dialog_1_1_set_scale_visitor_1_1_slice_args" ]
-    ] ]
+    ] ],
+    [ "UtilityMacros.h", "_utility_macros_8h.html", "_utility_macros_8h" ]
 ];

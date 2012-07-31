@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>MeshTex: MeshTex</title>
+<title>MeshTex: UtilityMacros.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('group__meshtex.html','');});
+$(document).ready(function(){initNavTree('_utility_macros_8h.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -85,33 +85,81 @@ $(document).ready(function(){initNavTree('group__meshtex.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#groups">Modules</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">MeshTex</div>  </div>
+<div class="title">UtilityMacros.h File Reference<div class="ingroups"><a class="el" href="group__generic-util.html">Generic Util</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Specific to the MeshTex plugin.  
+<p>Basic macros.  
 <a href="#details">More...</a></p>
+
+<p><a href="_utility_macros_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="groups"></a>
-Modules</h2></td></tr>
-<tr class="memitem:group__meshtex-core"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__meshtex-core.html">MeshTex Core</a></td></tr>
-<tr class="memdesc:group__meshtex-core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logic for manipulating patch mesh entities. <br/></td></tr>
-<tr class="memitem:group__meshtex-plugin"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__meshtex-plugin.html">MeshTex Plugin</a></td></tr>
-<tr class="memdesc:group__meshtex-plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defining and registering the MeshTex plugin. <br/></td></tr>
-<tr class="memitem:group__meshtex-ui"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__meshtex-ui.html">MeshTex UI</a></td></tr>
-<tr class="memdesc:group__meshtex-ui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementing and managing the MeshTex main menu and dialog windows. <br/></td></tr>
-<tr class="memitem:group__meshtex-util"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__meshtex-util.html">MeshTex Util</a></td></tr>
-<tr class="memdesc:group__meshtex-util"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility classes for patch mesh manipulation. <br/></td></tr>
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab06e1eb2e9bf38e0d452b1f796aed208"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_macros_8h.html#ab06e1eb2e9bf38e0d452b1f796aed208">STRINGIFY</a>(A)&#160;&#160;&#160;#A</td></tr>
+<tr class="memdesc:ab06e1eb2e9bf38e0d452b1f796aed208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a token to a string at compile-time.  <a href="#ab06e1eb2e9bf38e0d452b1f796aed208"></a><br/></td></tr>
+<tr class="memitem:abd4a9198899041394149612677e86935"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_utility_macros_8h.html#abd4a9198899041394149612677e86935">STRINGIFY_MACRO</a>(A)&#160;&#160;&#160;<a class="el" href="_utility_macros_8h.html#ab06e1eb2e9bf38e0d452b1f796aed208">STRINGIFY</a>(A)</td></tr>
+<tr class="memdesc:abd4a9198899041394149612677e86935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a macro's value to a string at compile-time.  <a href="#abd4a9198899041394149612677e86935"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<p>Specific to the MeshTex plugin. </p>
+<div class="textblock"><p>Basic macros. </p>
+</div><hr/><h2>Macro Definition Documentation</h2>
+<a class="anchor" id="ab06e1eb2e9bf38e0d452b1f796aed208"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRINGIFY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A</td><td>)</td>
+          <td>&#160;&#160;&#160;#A</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a token to a string at compile-time. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>The token to stringify. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abd4a9198899041394149612677e86935"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRINGIFY_MACRO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">A</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="_utility_macros_8h.html#ab06e1eb2e9bf38e0d452b1f796aed208">STRINGIFY</a>(A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a macro's value to a string at compile-time. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">A</td><td>The name of the macro to process. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="_utility_macros_8h.html">UtilityMacros.h</a></li>
     <li class="footer">Generated on Tue Jul 31 2012 11:55:06 for MeshTex by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.1 </li>

@@ -111,20 +111,27 @@ $(document).ready(function(){initNavTree('_plugin_properties_8h.html','');});
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#if !defined(INCLUDED_PLUGINPROPERTIES_H)</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INCLUDED_PLUGINPROPERTIES_H</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define PLUGIN_NAME &quot;MeshTex&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_VERSION &quot;3.0&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_AUTHOR &quot;Joel Baxter&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_AUTHOR_EMAIL &quot;joel.baxter@neogeographica.com&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_DESCRIPTION &quot;Align and scale textures on patch meshes&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif // #if !defined(INCLUDED_PLUGINPROPERTIES_H)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_utility_macros_8h.html" title="Basic macros.">UtilityMacros.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define PLUGIN_NAME &quot;MeshTex&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_VERSION_MAJOR_NUMERIC 3</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_VERSION_MINOR_NUMERIC 0</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_VERSION STRINGIFY_MACRO(PLUGIN_VERSION_MAJOR_NUMERIC) &quot;.&quot; STRINGIFY_MACRO(PLUGIN_VERSION_MINOR_NUMERIC)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_AUTHOR &quot;Joel Baxter&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_AUTHOR_EMAIL &quot;joel.baxter@neogeographica.com&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_COPYRIGHT_DATE &quot;2012&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_DESCRIPTION &quot;Align and scale textures on patch meshes&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_FILE_BASENAME &quot;meshtex&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLUGIN_FILE_DESCRIPTION &quot;patch mesh texturing plugin for GtkRadiant 1.5&quot;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif // #if !defined(INCLUDED_PLUGINPROPERTIES_H)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="_plugin_properties_8h.html">PluginProperties.h</a></li>
-    <li class="footer">Generated on Mon Jul 30 2012 17:22:16 for MeshTex by
+    <li class="footer">Generated on Tue Jul 31 2012 11:55:06 for MeshTex by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.1 </li>
   </ul>

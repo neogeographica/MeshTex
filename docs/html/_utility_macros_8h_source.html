@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>MeshTex: MeshTex</title>
+<title>MeshTex: UtilityMacros.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('group__meshtex.html','');});
+$(document).ready(function(){initNavTree('_utility_macros_8h.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -84,34 +84,44 @@ $(document).ready(function(){initNavTree('group__meshtex.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#groups">Modules</a>  </div>
   <div class="headertitle">
-<div class="title">MeshTex</div>  </div>
+<div class="title">UtilityMacros.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Specific to the MeshTex plugin.  
-<a href="#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2><a name="groups"></a>
-Modules</h2></td></tr>
-<tr class="memitem:group__meshtex-core"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__meshtex-core.html">MeshTex Core</a></td></tr>
-<tr class="memdesc:group__meshtex-core"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logic for manipulating patch mesh entities. <br/></td></tr>
-<tr class="memitem:group__meshtex-plugin"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__meshtex-plugin.html">MeshTex Plugin</a></td></tr>
-<tr class="memdesc:group__meshtex-plugin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defining and registering the MeshTex plugin. <br/></td></tr>
-<tr class="memitem:group__meshtex-ui"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__meshtex-ui.html">MeshTex UI</a></td></tr>
-<tr class="memdesc:group__meshtex-ui"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementing and managing the MeshTex main menu and dialog windows. <br/></td></tr>
-<tr class="memitem:group__meshtex-util"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__meshtex-util.html">MeshTex Util</a></td></tr>
-<tr class="memdesc:group__meshtex-util"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility classes for patch mesh manipulation. <br/></td></tr>
-</table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<p>Specific to the MeshTex plugin. </p>
-</div><!-- contents -->
+<a href="_utility_macros_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * Copyright 2012 Joel Baxter</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * This file is part of MeshTex.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * MeshTex is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * (at your option) any later version.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * MeshTex is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * along with MeshTex.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#if !defined(INCLUDED_UTILITYMACROS_H)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INCLUDED_UTILITYMACROS_H</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="_utility_macros_8h.html#ab06e1eb2e9bf38e0d452b1f796aed208">   34</a></span>&#160;<span class="preprocessor">#define STRINGIFY(A) #A</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="_utility_macros_8h.html#abd4a9198899041394149612677e86935">   41</a></span>&#160;<span class="preprocessor">#define STRINGIFY_MACRO(A) STRINGIFY(A)</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif // #if !defined(INCLUDED_UTILITYMACROS_H)</span></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="_utility_macros_8h.html">UtilityMacros.h</a></li>
     <li class="footer">Generated on Tue Jul 31 2012 11:55:06 for MeshTex by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.1 </li>

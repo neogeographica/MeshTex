@@ -24,5 +24,7 @@ var searchData=
   ['slicesize',['SliceSize',['../_mesh_entity_8cpp.html#a351badb8a7c8fd25437e283b23a02673',1,'MeshEntity.cpp']]],
   ['slicetexinfo',['SliceTexInfo',['../struct_mesh_entity_1_1_slice_tex_info.html',1,'MeshEntity']]],
   ['slicetype',['SliceType',['../class_mesh_entity.html#a685db39c1285bba9739943a195af2a4b',1,'MeshEntity::SliceType()'],['../struct_mesh_entity_1_1_slice_patch_context.html#abe7838b86fd9e3266d972db9424cb8a9',1,'MeshEntity::SlicePatchContext::sliceType()']]],
-  ['stretch_5fscale_5fop',['STRETCH_SCALE_OP',['../class_mesh_entity.html#a1f04e4e7d62c3e61d972f9d432702fd8a63023b8cd2108d01ddc7e64b0ebb3616',1,'MeshEntity']]]
+  ['stretch_5fscale_5fop',['STRETCH_SCALE_OP',['../class_mesh_entity.html#a1f04e4e7d62c3e61d972f9d432702fd8a63023b8cd2108d01ddc7e64b0ebb3616',1,'MeshEntity']]],
+  ['stringify',['STRINGIFY',['../_utility_macros_8h.html#ab06e1eb2e9bf38e0d452b1f796aed208',1,'UtilityMacros.h']]],
+  ['stringify_5fmacro',['STRINGIFY_MACRO',['../_utility_macros_8h.html#abd4a9198899041394149612677e86935',1,'UtilityMacros.h']]]
 ];
