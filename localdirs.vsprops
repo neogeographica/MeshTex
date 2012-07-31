@@ -21,7 +21,7 @@
 	/>
 	<UserMacro
 		Name="GtkDir"
-		Value="D:/gtk2-2.16.6"
+		Value="D:/gtk2-2.24.10"
 		PerformEnvironmentSet="true"
 	/>
 </VisualStudioPropertySheet>

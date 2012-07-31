@@ -1,13 +1,13 @@
 *** Downloading the latest source:
 
-TBD
+https://github.com/neogeographica/MeshTex
 
 
 *** Downloading dependences:
 
-This project depends on sources/SDKs for GtkRadiant 1.5, GTK+ 2, and STLport 5.  It was most recently compiled against minor versions GtkRadiant 1.5.0, GTK+ 2.16.6 (32-bit), and STLport 5.2.1.  At the time of writing this file, those were available at:
+This project depends on sources/SDKs for GtkRadiant 1.5, GTK+ 2, and STLport 5.  It was most recently compiled against minor versions GtkRadiant 1.5.0, GTK+ 2.24.10 (32-bit), and STLport 5.2.1.  At the time of writing this file, those were available at:
 
-  - GtkRadiant 1.5: https://github.com/TTimo/GtkRadiant/tree/1.5
+  - GtkRadiant 1.5: https://github.com/TTimo/GtkRadiant/tree/1.5-release
   - GTK+ 2 stack: http://www.gtk.org/download/index.php
   - STLport 5: http://sourceforge.net/projects/stlport/files/STLport/
 
@@ -17,7 +17,7 @@ Unzip the resources that you download and place them in a handy location that ca
 
   - For GtkRadiant, only the header files are important.
   - The GTK+ download includes prebuilt libraries.
-  - STLport does not need a library built, as long as you are not using STL iostreams.  In the folder where you placed the STLport distribution, navigate into stlport\stl\config and open user_config.h in a text editor.  Ensure that the _STLP_NO_IOSTREAMS macro has a value of 1 to disable iostreams.
+  - STLport does not need a library built, as long as you are not using STL iostreams.  In the folder where you placed the STLport distribution, navigate into stlport\stl\config and open user_config.h in a text editor.  Uncomment the line that defines _STLP_NO_IOSTREAMS to a value of 1.
 
 You also need an installation of the GtkRadiant 1.5 application in order to actually use the plugin.  Rather than building it from source, you will probably just want to download and execute the usual GtkRadiant installer: http://icculus.org/gtkradiant/downloads.html#gtkr15
 

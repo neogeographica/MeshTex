@@ -42,7 +42,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="$(RadiantSrcDir)/include;$(RadiantSrcDir)/libs;$(StlportDir)/stlport;$(GtkDir)/include/glib-2.0;$(GtkDir)/include/gtk-2.0;$(GtkDir)/lib/glib-2.0/include;$(GtkDir)/lib/gtk-2.0/include;$(GtkDir)/include/cairo;$(GtkDir)/include/pango-1.0;$(GtkDir)/include/atk-1.0"
+				AdditionalIncludeDirectories="$(RadiantSrcDir)/include;$(RadiantSrcDir)/libs;$(StlportDir)/stlport;$(GtkDir)/include/glib-2.0;$(GtkDir)/include/gtk-2.0;$(GtkDir)/lib/glib-2.0/include;$(GtkDir)/lib/gtk-2.0/include;$(GtkDir)/include/cairo;$(GtkDir)/include/pango-1.0;$(GtkDir)/include/atk-1.0;$(GtkDir)/include/gdk-pixbuf-2.0"
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;MESHTEX_EXPORTS"
 				StringPooling="true"
 				MinimalRebuild="true"
@@ -131,7 +131,7 @@
 				InlineFunctionExpansion="2"
 				EnableIntrinsicFunctions="true"
 				FavorSizeOrSpeed="1"
-				AdditionalIncludeDirectories="$(RadiantSrcDir)/include;$(RadiantSrcDir)/libs;$(StlportDir)/stlport;$(GtkDir)/include/glib-2.0;$(GtkDir)/include/gtk-2.0;$(GtkDir)/lib/glib-2.0/include;$(GtkDir)/lib/gtk-2.0/include;$(GtkDir)/include/cairo;$(GtkDir)/include/pango-1.0;$(GtkDir)/include/atk-1.0"
+				AdditionalIncludeDirectories="$(RadiantSrcDir)/include;$(RadiantSrcDir)/libs;$(StlportDir)/stlport;$(GtkDir)/include/glib-2.0;$(GtkDir)/include/gtk-2.0;$(GtkDir)/lib/glib-2.0/include;$(GtkDir)/lib/gtk-2.0/include;$(GtkDir)/include/cairo;$(GtkDir)/include/pango-1.0;$(GtkDir)/include/atk-1.0;$(GtkDir)/include/gdk-pixbuf-2.0"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;MESHTEX_EXPORTS"
 				StringPooling="true"
 				ExceptionHandling="0"
