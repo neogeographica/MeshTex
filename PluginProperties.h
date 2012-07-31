@@ -27,10 +27,17 @@
 #if !defined(INCLUDED_PLUGINPROPERTIES_H)
 #define INCLUDED_PLUGINPROPERTIES_H
 
+#include "UtilityMacros.h"
+
 #define PLUGIN_NAME "MeshTex"
-#define PLUGIN_VERSION "3.0"
+#define PLUGIN_VERSION_MAJOR_NUMERIC 3
+#define PLUGIN_VERSION_MINOR_NUMERIC 0
+#define PLUGIN_VERSION STRINGIFY_MACRO(PLUGIN_VERSION_MAJOR_NUMERIC) "." STRINGIFY_MACRO(PLUGIN_VERSION_MINOR_NUMERIC)
 #define PLUGIN_AUTHOR "Joel Baxter"
 #define PLUGIN_AUTHOR_EMAIL "joel.baxter@neogeographica.com"
+#define PLUGIN_COPYRIGHT_DATE "2012"
 #define PLUGIN_DESCRIPTION "Align and scale textures on patch meshes"
+#define PLUGIN_FILE_BASENAME "meshtex"
+#define PLUGIN_FILE_DESCRIPTION "patch mesh texturing plugin for GtkRadiant 1.5"
 
 #endif // #if !defined(INCLUDED_PLUGINPROPERTIES_H)

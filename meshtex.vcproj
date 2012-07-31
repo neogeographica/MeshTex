@@ -211,6 +211,10 @@
 						RelativePath=".\RefCounted.h"
 						>
 					</File>
+					<File
+						RelativePath=".\UtilityMacros.h"
+						>
+					</File>
 				</Filter>
 				<Filter
 					Name="plugin"
