@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="localdirs"
+	>
+	<UserMacro
+		Name="RadiantExeDir"
+		Value="C:\Program Files (x86)\GtkRadiant 1.5.0"
+		PerformEnvironmentSet="true"
+	/>
+	<UserMacro
+		Name="RadiantSrcDir"
+		Value="D:/GtkRadiant 1.5.0 source"
+		PerformEnvironmentSet="true"
+	/>
+	<UserMacro
+		Name="StlportDir"
+		Value="D:/STLPort-5.2.1"
+		PerformEnvironmentSet="true"
+	/>
+	<UserMacro
+		Name="GtkDir"
+		Value="D:/gtk2-2.16.6"
+		PerformEnvironmentSet="true"
+	/>
+</VisualStudioPropertySheet>
