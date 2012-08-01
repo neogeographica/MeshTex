@@ -58,5 +58,5 @@
  *   - STLport 5: http://sourceforge.net/projects/stlport/files/STLport/
  *
  * The specific minor versions last used to build MeshTex are GtkRadiant 1.5.0,
- * GTK+ 2.16.6, and STLport 5.2.1.
+ * GTK+ 2.24.10, and STLport 5.2.1.
  */
