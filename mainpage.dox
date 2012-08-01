@@ -53,7 +53,7 @@
  * @section external External Dependences
  *
  * This version of MeshTex uses types and functions from these other sources:
- *   - GtkRadiant 1.5: https://github.com/TTimo/GtkRadiant/tree/1.5
+ *   - GtkRadiant 1.5: https://github.com/TTimo/GtkRadiant/tree/1.5-release
  *   - GTK+ 2 stack: http://www.gtk.org/download/index.php
  *   - STLport 5: http://sourceforge.net/projects/stlport/files/STLport/
  *
