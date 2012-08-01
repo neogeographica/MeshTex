@@ -156,6 +156,14 @@ MeshEntity::MeshEntity(scene::Node& mesh,
    const char *shaderName = GlobalPatchCreator().Patch_getShader(_mesh);
    IShader *shader = GlobalShaderSystem().getShaderForName(shaderName);
    qtexture_t *texture = shader->getTexture();
+   if (texture != NULL)
+   {
+      _naturalTexUnits[S_TEX_AXIS] = texture->width / 2.0f;
+      _naturalTexUnits[T_TEX_AXIS] = texture->height / 2.0f;
+   }
+   // We don't need the shader for anything else now.
+   shader->DecRef();
+   // Check for valid mesh; bail if not.
    if (_numSlices[ROW_SLICE_TYPE] < 3 ||
        _numSlices[COL_SLICE_TYPE] < 3 ||
        texture == NULL)
@@ -165,10 +173,6 @@ MeshEntity::MeshEntity(scene::Node& mesh,
       return;
    }
    _valid = true;
-   _naturalTexUnits[S_TEX_AXIS] = texture->width / 2.0f;
-   _naturalTexUnits[T_TEX_AXIS] = texture->height / 2.0f;
-   // We don't need the shader for anything else now.
-   shader->DecRef();
    // Find the worldspace extents of the mesh now... they won't change during
    // the lifetime of this object.
    UpdatePosMinMax(X_POS_AXIS);
