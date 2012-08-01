@@ -24,6 +24,8 @@ You also need an installation of the GtkRadiant 1.5 application in order to actu
 
 *** Building:
 
+There's no platform-specific code in the MeshTex plugin, but currently I'm only building it on Windows.  Adventurous Mac/Linux porters are welcome to have a go.
+
 meshtex.sln is a Visual Studio 2008 solution.  (It may very well also import correctly into later versions of Visual Studio.)
 
 Open meshtex.sln using Visual Studio.  Before building the project you must configure a few directories, as follows:
@@ -35,7 +37,7 @@ Open meshtex.sln using Visual Studio.  Before building the project you must conf
 - Replace the Value entry here with the correct path to the root of your GtkRadiant source.  The directory referenced here should be the one that CONTAINS the "include" and "libs" directories.
 - Click OK to set that value for "RadiantSrcDir".
 - Similarly you should edit the value for "StlportDir".  The directory referenced here is the one that CONTAINS the "stlport" directory for your downloaded STLport source.
-- Similarly you should edit the value for "GtkDir".  The directory referenced here is the one that CONTAINS the "include" and "lib" directory for your downloaded GTK+ SDK.
+- Similarly you should edit the value for "GtkDir".  The directory referenced here is the one that CONTAINS the "include" and "lib" directories for your downloaded GTK+ SDK.
 - Finally, edit the value for "RadiantExeDir".  The directory referenced here is the one that contains "GtkRadiant.exe" for your working installation of the GtkRadiant 1.5 application.
 - Click the OK button to accept and close the dialog.
 
