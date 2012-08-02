@@ -206,7 +206,7 @@ private: // private member vars
    GtkWidget *_window;
 
    /**
-    * Reference-counted handle on the main menu object.
+    * Pointer to a reference-counted handle on the main menu object.
     */
    SmartPointer<GenericMainMenu> *_mainMenu;
 

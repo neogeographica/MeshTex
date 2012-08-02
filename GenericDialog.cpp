@@ -114,7 +114,6 @@ GenericDialog::Show(const std::string& triggerCommand)
 {
    // Remember the command token that summoned the dialog; subclasses can make
    // use of this information.
-   // XXX Maybe this info shouldn't be in the generic dialog code?
    _triggerCommand = triggerCommand;
    // Show the window if it is currently hidden.
    if (!GTK_WIDGET_VISIBLE(_dialog))

@@ -145,6 +145,9 @@ PluginModule::QERPluginDispatch(const char *command,
    // Bail out if the plugin menu doesn't exist.
    if (UIInstance().MainMenu() == NULL)
    {
+      // XXX This shouldn't happen; might as well drop an ASSERT or error
+      // message in here. First make sure there's no odd Radiant-exiting
+      // corner case race that could trigger it though.
       return;
    }
    // Send the command dispatch to the menu.

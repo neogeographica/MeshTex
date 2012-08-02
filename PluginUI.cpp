@@ -44,7 +44,7 @@ PluginUI::PluginUI()
    SmartPointer<GenericDialog> setScaleDialogGeneric(setScaleDialog);
    RegisterDialog(setScaleDialogGeneric);
    // Instantiate and register the Get Info dialog. Constructor needs a handle
-   // on the Set S/ T Scale dialog (since it may need to send texture info to
+   // on the Set S/T Scale dialog (since it may need to send texture info to
    // it). 
    SmartPointer<GenericDialog> getInfoDialogGeneric(
       new GetInfoDialog("GetInfo", setScaleDialog));
