@@ -242,8 +242,9 @@ GenericPluginUI::RegisterDialogSignalCallback(GtkWidget *widget,
 }
 
 /**
- * Declare that the controllee widget should be active only when the
- * controller widget is active.
+ * Declare that the controllee widget should be inactive when the
+ * controller widget is inactive. The controllee will be active only
+ * when all of its controllers allow it to be so.
  *
  * @param controller The controller widget.
  * @param controllee The controllee widget.
@@ -263,8 +264,9 @@ GenericPluginUI::RegisterWidgetDependence(GtkWidget *controller,
 }
 
 /**
- * Declare that the controllee widget should be active only when the
- * controller widget is inactive.
+ * Declare that the controllee widget should be inactive when the
+ * controller widget is active. The controllee will be active only
+ * when all of its controllers allow it to be so.
  *
  * @param controller The controller widget.
  * @param controllee The controllee widget.
@@ -302,7 +304,7 @@ GenericPluginUI::WidgetControlCallback(GtkWidget *widget,
       std::vector<GtkWidget *>::iterator controllerIter;
       // Start with an assumption that the controllee widget will be active.
       bool sensitive = true;
-      // Look for a dependence on this widget.
+      // Look for a dependence on any widget.
       controllerIter = _widgetControlledByMap[controllee].begin();
       for (; controllerIter != _widgetControlledByMap[controllee].end(); ++controllerIter)
       {
@@ -313,8 +315,7 @@ GenericPluginUI::WidgetControlCallback(GtkWidget *widget,
             break;
          }
       }
-      // Look for an anti-dependence on this widget.
-      // XXX Don't really need to do this if we already found a dependence.
+      // Look for an anti-dependence on any widget.
       controllerIter = _widgetAntiControlledByMap[controllee].begin();
       for (; controllerIter != _widgetAntiControlledByMap[controllee].end(); ++controllerIter)
       {
