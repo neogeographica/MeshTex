@@ -21,6 +21,8 @@ Unzip the resources that you download and place them in a handy location that ca
 
 You also need an installation of the GtkRadiant 1.5 application in order to actually use the plugin.  Rather than building it from source, you will probably just want to download and execute the usual GtkRadiant installer: http://icculus.org/gtkradiant/downloads.html#gtkr15
 
+It can also be helpful to have git installed... which you probably do, if you got this from GitHub.  Nevertheless it's not actually necessary to have git available during the compile process; it's just used to gather some information if it is available, as described below.
+
 
 *** Building:
 
@@ -38,16 +40,25 @@ Open meshtex.sln using Visual Studio.  Before building the project you must conf
 - Click OK to set that value for "RadiantSrcDir".
 - Similarly you should edit the value for "StlportDir".  The directory referenced here is the one that CONTAINS the "stlport" directory for your downloaded STLport source.
 - Similarly you should edit the value for "GtkDir".  The directory referenced here is the one that CONTAINS the "include" and "lib" directories for your downloaded GTK+ SDK.
-- Finally, edit the value for "RadiantExeDir".  The directory referenced here is the one that contains "GtkRadiant.exe" for your working installation of the GtkRadiant 1.5 application.
+- Similarly you should edit the value for "GitDir".  The directory referenced here is the one that contains the "git.exe" program on your system.  If you don't have git installed, this can be any bogus path.  It is used in a pre-build step as described below.
+- Finally, edit the value for "RadiantExeDir".  The directory referenced here is the one that contains "GtkRadiant.exe" for your working installation of the GtkRadiant 1.5 application.  It is used in a post-build step as described below.
 - Click the OK button to accept and close the dialog.
 
-The Visual Studio build process will copy meshtex.dll to <RadiantExeDir>/plugins after each build.  If RadiantExeDir points to a protected directory that requires elevated user permissions (such as "Program Files (x86)") then you will need to be running Visual Studio as administrator in order for this copy to succeed.  If you do not want the build process to perform this copy, then follow these steps:
+Once you have configured the directories, it seems to be helpful to quit out of Visual Studio (save your changes when prompted) and restart before attempting to build.
+
+The build process has a pre-build step that uses <GitDir>/git to find the current git commit hash for the codebase that you are building.  This commit hash is placed in a generated header file, CodeVersion.h.  If the git executable cannot be located then the string "n/a" will be used for the commit hash.  During the build process the commit hash will be used as part of the product version string that will be visible in the DLL properties.  This information is just FYI; you don't need to do anything about this other than set the value of GitDir as per above if you do have git installed.
+
+The build process also has a post-build step that will copy meshtex.dll to <RadiantExeDir>/plugins after each build.  If RadiantExeDir points to a protected directory that requires elevated user permissions (such as "Program Files (x86)") then you will need to be running Visual Studio as administrator in order for this copy to succeed.
+
+If you do NOT want the build process to perform the post-build copy of meshtex.dll, then follow these steps:
 
 - Right click on the "meshtex" project in the Solution Explorer or Property Manager, and choose "properties".  This opens its properties dialog.
 - In the "Configuration" dropdown, choose "All Configurations".
 - On the left side of the dialog, find "Post-Build Event" under "Build Events", which is under "Configuration Properties".  Select "Post-Build Event".
-- The right-hand side should now show the command line and description for the copy process.  Select and delete those.
+- The right-hand side should now show the command line and description for the copy process.
+- The right-hand side also has a property called "Excluded From Build".  Change that from "No" to "Yes".
 - Click the OK button to accept and close the dialog.
+
 
 You should be ready to build!  Press F7, or select "Build Solution" from the "Build" menu on the top bar.
 

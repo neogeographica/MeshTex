@@ -3,6 +3,7 @@
 *.ncb
 *.suo
 *.user
+CodeVersion.h
 
 # build results
 Debug/

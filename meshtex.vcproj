@@ -26,6 +26,8 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
+				Description="Capturing git commit hash (if known)"
+				CommandLine="set GitCommit=n/a&#x0D;&#x0A;for /f &quot;delims=&quot; %%a in (&apos;&quot;$(GitDir)\git&quot; rev-parse --short HEAD 2^&gt;NUL&apos;) do (set GitCommit=%%a)&#x0D;&#x0A;echo #define CODE_ID %GitCommit% &gt; &quot;$(ProjectDir)CodeVersion.h&quot;&#x0D;&#x0A;exit /b 0&#x0D;&#x0A;"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -112,6 +114,9 @@
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
+				Description="Capturing git commit hash (if known)"
+				CommandLine="set GitCommit=n/a&#x0D;&#x0A;for /f &quot;delims=&quot; %%a in (&apos;&quot;$(GitDir)\git&quot; rev-parse --short HEAD 2^&gt;NUL&apos;) do (set GitCommit=%%a)&#x0D;&#x0A;echo #define CODE_ID %GitCommit% &gt; &quot;$(ProjectDir)CodeVersion.h&quot;&#x0D;&#x0A;exit /b 0&#x0D;&#x0A;"
+				ExcludedFromBuild="false"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"

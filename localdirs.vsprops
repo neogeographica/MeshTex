@@ -24,4 +24,8 @@
 		Value="D:/gtk2-2.24.10"
 		PerformEnvironmentSet="true"
 	/>
+	<UserMacro
+		Name="GitDir"
+		Value="C:\Users\Joel Baxter\AppData\Local\GitHub\PortableGit_015aa71ef18c047ce8509ffb2f9e4bb0e3e73f13\cmd"
+	/>
 </VisualStudioPropertySheet>
